@@ -50,3 +50,132 @@ h1, h2, h3 {
     position: relative;
     z-index: 2;
 }
+      /*  Custom CSS - Thay đổi style.css thành tên file CSS của bạn */
+      body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to bottom, #e0ffff, #cce0ff); /* Gradient cho nền */
+        background-attachment: fixed;
+    }
+
+    .header-section {
+        background-image: url('https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+        background-size: cover;
+        background-position: center;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+        padding: 100px 0; /* Tăng padding cho header */
+    }
+
+    .header-section h1 {
+        font-size: 4em; /* Tăng kích thước font */
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .header-section .lead {
+        font-size: 1.5em; /* Tăng kích thước font */
+        color: #fff;
+    }
+
+    .service-box {
+        transition: all 0.3s ease;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.8); /* Nền trong suốt cho service box */
+        padding: 30px;
+    }
+
+    .service-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.3); /* Hiệu ứng shadow rõ hơn */
+    }
+
+    .service-box h3 {
+        color: #007bff;
+    }
+
+    .btn-outline-light {
+        border-radius: 25px;
+        padding: 10px 25px;
+        font-weight: bold;
+        transition: all 0.3s ease; /* Thêm transition cho button */
+    }
+
+    .btn-outline-light:hover {
+        background-color: #007bff; 
+        color: white;
+    }
+
+    .bg-dark {
+        background-color: #343a40!important;
+    }
+    #testimonials {
+        background-color: #f8f9fa; /* Màu nền nhạt cho phần testimonials */
+        padding: 50px 0;
+    }
+
+    .testimonial {
+        border: 1px solid #ddd; 
+        padding: 30px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        background-color: white; /* Nền trắng cho testimonial */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Hiệu ứng shadow */
+        transition: all 0.3s ease;
+    }
+
+    .testimonial .user-info {
+        display: flex;
+        align-items: center; 
+        margin-bottom: 15px;
+    }
+    .testimonial:hover{
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.3); /* Hiệu ứng shadow rõ hơn */
+        transition: all 0.3s ease;
+    }
+
+    .testimonial .user-info img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%; 
+        margin-right: 15px; 
+    }
+
+    .testimonial .user-info h5 {
+        margin-bottom: 0; /* Loại bỏ margin mặc định */
+    }
+    /* Carousel Styles */
+    #imageCarousel .carousel-item img {
+        height: 500px; 
+        object-fit: cover; 
+    }
+
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.6); 
+        bottom: 40px; 
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px 40px; 
+        border-radius: 8px; /* Bo tròn góc nhiều hơn */
+    }
+
+    .carousel-caption h3 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        background-color: rgba(102, 102, 102, 0.7); /* Nền cho icon điều khiển */
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    .imgcolor {
+        background-image: linear-gradient(#ff5656,#67a4ff);
+    }
+    footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+  
