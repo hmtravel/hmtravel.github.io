@@ -225,8 +225,8 @@ button.msc-cancel {
 @font-face {
   font-family: 'Rubik';
   font-display: swap;
-  src: url('/v4/fonts/Rubik-Minified.woff2') format('woff2'),
-    url('/v4/fonts/Rubik-Minified.ttf') format('truetype');
+  src: url('/assets/Rubik-Minified.woff2') format('woff2'),
+    url('/assets/Rubik-Minified.ttf') format('truetype');
 }
 
 @font-face {
