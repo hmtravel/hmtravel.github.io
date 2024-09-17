@@ -4,17 +4,17 @@
   "description": "Play and create word search puzzles online",
   "icons": [
     {
-      "src": "/ico192.png",
+      "src": "./assets/ico192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/ico512.png",
+      "src": "./assets/ico512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/index.html",
   "background_color": "#faffe4",
   "display": "fullscreen",
   "orientation": "portrait",
