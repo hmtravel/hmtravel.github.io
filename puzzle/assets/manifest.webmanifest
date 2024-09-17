@@ -1,0 +1,32 @@
+{
+  "short_name": "Word Search",
+  "name": "The Word Search",
+  "description": "Play and create word search puzzles online",
+  "icons": [
+    {
+      "src": "/ico192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/ico512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#faffe4",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "theme_color": "#faffe4",
+  "shortcuts": [
+    {
+      "name": "Create a Word Search",
+      "short_name": "Create",
+      "description": "Create your own word search puzzle",
+      "url": "/maker/",
+      "icons": [{ "src": "/ico192.png", "sizes": "192x192" }]
+    }
+  ]
+}
