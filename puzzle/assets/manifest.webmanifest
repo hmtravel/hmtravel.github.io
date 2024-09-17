@@ -4,7 +4,7 @@
   "description": "Play and create word search puzzles online",
   "icons": [
     {
-      "src": "./assets/ico192.png",
+      "src": "./ico192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
