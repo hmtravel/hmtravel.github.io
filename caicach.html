@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sơ đồ tư duy - Các cải cách của Hồ Quý Ly</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Sơ đồ tư duy - Các cải cách của Hồ Quý Ly" />
+  <meta property="og:description" content="Khám phá sơ đồ tư duy về các cải cách của Hồ Quý Ly trong lịch sử Việt Nam." />
+  <meta property="og:image" content="https://mttq.thanhhoa.gov.vn/ashx/BaiViet.ashx?IDTinTuc=1410" />
+  <meta property="og:url" content="https://yourdomain.com/caicach.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sơ đồ tư duy - Các cải cách của Hồ Quý Ly" />
+  <meta name="twitter:description" content="Khám phá sơ đồ tư duy về các cải cách của Hồ Quý Ly trong lịch sử Việt Nam." />
+  <meta name="twitter:image" content="https://mttq.thanhhoa.gov.vn/ashx/BaiViet.ashx?IDTinTuc=1410" />
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    #container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
+      cursor: grab;
+    }
+    #container:active {
+      cursor: grabbing;
+    }
+    #image {
+      transform-origin: center;
+      transition: transform 0.1s ease;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img id="image" src="caicach.svg" alt="Sơ đồ tư duy - Các cải cách của Hồ Quý Ly" draggable="false">
+  </div>
+
+  <script>
+    const container = document.getElementById('container');
+    const image = document.getElementById('image');
+
+    let isDragging = false;
+    let startX, startY;
+    let translateX = 0, translateY = 0;
+    let scale = 1;
+
+    // Drag functionality
+    container.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      startX = e.clientX - translateX;
+      startY = e.clientY - translateY;
+    });
+
+    container.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      translateX = e.clientX - startX;
+      translateY = e.clientY - startY;
+      image.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+    });
+
+    container.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+
+    container.addEventListener('mouseleave', () => {
+      isDragging = false;
+    });
+
+    // Zoom functionality
+    container.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      const zoomFactor = 0.1;
+      if (e.deltaY < 0) {
+        scale = Math.min(scale + zoomFactor, 5); // Max zoom = 5x
+      } else {
+        scale = Math.max(scale - zoomFactor, 0.5); // Min zoom = 0.5x
+      }
+      image.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+    });
+  </script>
+</body>
+</html>
