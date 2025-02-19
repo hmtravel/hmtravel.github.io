@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Private Cars - HM Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="shapes-3" id="loading"></div>
+    
+    <div class="overlay"></div>
+    
+    <div class="max-w-lg mx-auto my-10 p-6 card" id="main-content" style="display: none;">
+        <img src="logo.jpg" alt="HM Travel" class="mx-auto w-32 h-32 rounded-full shadow-md">
+        <h1 class="text-3xl font-bold mt-4 typing"></h1>
+        <p class="text-lg text-gray-300">Dịch vụ đặt xe du lịch - HM Travel</p>
+        <p class="mt-2 text-sm text-gray-300">Hành trình an toàn - Dịch vụ tận tâm</p>
+
+        <div class="mt-4">
+            <p class="font-semibold">📍 Địa điểm: Đà Nẵng - Hội An</p>
+            <p class="font-semibold">📞 <a href="tel:+84974597614" class="text-blue-300">+84 974 597 614</a></p>
+            <p class="font-semibold">✉️ <a href="mailto:minhhai113he@gmail.com" class="text-blue-300">minhhai113he@gmail.com</a></p>
+        </div>
+
+        <div class="mt-6">
+            <p class="font-semibold">📲 Liên hệ qua mạng xã hội:</p>
+            <div class="social-icons">
+                <a href="https://m.me/hmtravel.dn" class="text-blue-500"><i class="fab fa-facebook-messenger"></i> Messenger</a>
+                <a href="https://wa.me/+84974597614" class="text-green-500"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="weixin://dl/chat?hmtravel_vn" class="text-green-400"><i class="fab fa-weixin"></i> WeChat</a>
+                <a href="https://line.me/ti/p/hmtravel_vn" class="text-blue-400"><i class="fab fa-line"></i> LINE</a>
+                <a href="https://open.kakao.com/o/sSBBNZgh" class="text-yellow-500"><i class="fas fa-comment"></i> KakaoTalk</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.getElementById("loading").style.display = "none";
+                document.getElementById("main-content").style.display = "block";
+            }, 1500);
+        });
+    </script>
+    <script src="typing.js"></script>
+</body>
+</html>
